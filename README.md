@@ -35,6 +35,6 @@ Note: the subprocesses must be reaped in order to be awarded the marks.
 [ ] 11.2. Extend 11.1 to support requirement 5 and subtasks 7.1 to 7.3;  
 [ ] 11.3. Extend 11.2 in the case of incomplete quotes (e.g. Input echo "de, hit enter and input cd");  
 [ ] 11.4. Extend 11.3 to support requirements 5 and 7, together with subtask 10.3;  
-12. Wait for the command to be completed when encountering >, <, or j:  
+12. Wait for the command to be completed when encountering >, <, or |:  
 [x] 12.1. Support requirements 4 and 5 together with subtasks 7.1 to 7.3;  
 [ ] 12.2. Extend 12.1 to support requirement 11  
