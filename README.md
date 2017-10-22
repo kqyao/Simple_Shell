@@ -15,12 +15,11 @@ The tasks completed (marked in [x]):
 [x] 5.4. Combine 5.1 and 5.2 with 5.3;  
 [x] 6. Support for bash style redirection syntax (e.g. cat < 1.txt 2.txt > 3.txt 4.txt);  
 7. Pipes:  
-[x] 7.1. Basic pipe support (e.g. echo 123 j grep 1);  
-[x] 7.2. Run all stages of piped process in parallel. (e.g. yes ve482 j grep 482);  
-[x] 7.3. Extend 7.2 to support requirements 5 and 6 (e.g. cat < 1.txt 2.txt j grep 1 > 3.txt);  
-[x] 7.4. Extend 7.3 to support arbitrarily deep \cascade pipes" (e.g. echo 123 j grep 1 j grep j grep 1)  
-Note: the subprocesses must be reaped in order to be awarded the marks.  
-[?] 8. Support CTRLD (similar to bash, when there is no/an unfinished command); [5]  
+[x] 7.1. Basic pipe support (e.g. echo 123 | grep 1);  
+[x] 7.2. Run all stages of piped process in parallel. (e.g. yes ve482 | grep 482);  
+[x] 7.3. Extend 7.2 to support requirements 5 and 6 (e.g. cat < 1.txt 2.txt | grep 1 > 3.txt);  
+[x] 7.4. Extend 7.3 to support arbitrarily deep \cascade pipes" (e.g. echo 123 | grep 1 | grep | grep 1)  
+[x] 8. Support CTRLD (similar to bash, when there is no/an unfinished command);   
 9. Internal commands:  
 [x] 9.1. Implement pwd as a builtin command;  
 [x] 9.2. Allow changing working directory using cd;  
@@ -30,11 +29,5 @@ Note: the subprocesses must be reaped in order to be awarded the marks.
 [x] 10.2. Extend 10.1 to support subtasks 7.1 to 7.3;  
 [x] 10.3. Extend 10.2 to support requirement 8, especially on an incomplete input;  
 [x] 10.4. Extend 10.3 to support requirement 7;  
-11. Support quotes:
-[ ] 11.1. Handle single and double quotes (e.g. echo "de'f' ghi" '123"a"bc' a b c);  
-[ ] 11.2. Extend 11.1 to support requirement 5 and subtasks 7.1 to 7.3;  
-[ ] 11.3. Extend 11.2 in the case of incomplete quotes (e.g. Input echo "de, hit enter and input cd");  
-[ ] 11.4. Extend 11.3 to support requirements 5 and 7, together with subtask 10.3;  
-12. Wait for the command to be completed when encountering >, <, or |:  
+11. Wait for the command to be completed when encountering >, <, or |:  
 [x] 12.1. Support requirements 4 and 5 together with subtasks 7.1 to 7.3;  
-[ ] 12.2. Extend 12.1 to support requirement 11  
